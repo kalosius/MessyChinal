@@ -815,5 +815,18 @@
       });
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer=""></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".close-btn").forEach(button => {
+            button.addEventListener("click", function () {
+                this.closest(".alert-message").style.display = "none";
+            });
+        });
+    });
+</script>
+<style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style>
+<div id="veepn-guard-alert"></div>
   </body>
 </html>
